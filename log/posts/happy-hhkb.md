@@ -9,3 +9,8 @@
 이번엔 마지막이라는 각오로 스위치를 세밀하게 손보고, 펌웨어도 취향대로 세팅했다. 키감이 울리는 순간마다 "왜 다른 키보드로 갈아탔을까" 싶을 정도로 잘 맞는다. HHKB는 내 작업 리듬을 지키는 악기이자, 프로그래밍 언어보다 먼저 손끝에 저장된 사고의 문법이다.
 
 그래서 이 글을 쓰며 다시 다짐한다. 네 번째는 없다. 대신 이 친구와 오래 가기 위해 매주 손목 스트레칭을 하고, 키캡을 주기적으로 닦는다. 마지막 영입으로 적힌 날짜 11월 15일이 앞으로도 해피해킹 찬가의 후렴으로 남을 것이다.
+
+<video controls playsinline style="width:100%;max-width:720px" poster="/log/images/hhkb.webp">
+  <source src="/log/videos/happy-hhkb.mov" type="video/quicktime" />
+  브라우저가 동영상을 지원하지 않습니다. <a href="/log/videos/happy-hhkb.mov">직접 내려받아 감상하세요.</a>
+</video>
