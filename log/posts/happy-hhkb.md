@@ -10,7 +10,7 @@
 
 그래서 이 글을 쓰며 다시 다짐한다. 네 번째는 없다. 대신 이 친구와 오래 가기 위해 매주 손목 스트레칭을 하고, 키캡을 주기적으로 닦는다. 마지막 영입으로 적힌 날짜 11월 15일이 앞으로도 해피해킹 찬가의 후렴으로 남을 것이다.
 
-<video controls playsinline style="width:100%;max-width:720px" poster="/log/images/hhkb.webp">
+<video controls playsinline style="width:100%;max-width:720px">
   <source src="/log/videos/happy-hhkb.mp4" type="video/mp4" />
   브라우저가 동영상을 지원하지 않습니다. <a href="/log/videos/happy-hhkb.mp4">직접 내려받아 감상하세요.</a>
 </video>
