@@ -18,6 +18,15 @@
     "coverImage": "/log/images/hardware.webp"
   },
   {
+    "slug": "cookie-party-poodle",
+    "title": "쿠키의 첫 여름",
+    "date": "2025-08-01",
+    "summary": "파티푸들 쿠키를 입양하고 첫 산책까지 함께한 기록",
+    "readingTime": "4 min",
+    "tags": ["Pet", "Cookie", "Life"],
+    "coverImage": "/log/images/cookie-arrival.webp"
+  },
+  {
     "slug": "opensource-future",
     "title": "오픈소스의 미래",
     "date": "2025-11-05",
