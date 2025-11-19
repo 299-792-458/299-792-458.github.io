@@ -3,7 +3,7 @@
     "slug": "ai-era-code",
     "title": "AI와 합주하다",
     "date": "2025-01-01",
-    "summary": "AI와 함께하는 즉흥 라이브 코딩 세션에서 발견한 리듬과 플레이북",
+    "summary": "프롬프트 모듈화와 IDE 자동화로 팀의 AI 개발 플레이북을 실험한 기록",
     "readingTime": "6 min",
     "tags": ["AI", "Workflow", "Team"],
     "coverImage": "/log/images/ai-era.webp"
@@ -12,7 +12,7 @@
     "slug": "hardware-ritual",
     "title": "하드웨어 리추얼",
     "date": "2025-06-01",
-    "summary": "새벽 랙 구성부터 모니터링까지, 손으로 짜 올린 서버 구축기",
+    "summary": "랙 전력·발열 설계부터 케이블 토폴로지와 모니터링 룰까지 다시 짠 서버 구축기",
     "readingTime": "5 min",
     "tags": ["Hardware", "Infra"],
     "coverImage": "/log/images/hardware.webp"
@@ -21,7 +21,7 @@
     "slug": "cookie-party-poodle",
     "title": "쿠키의 첫 여름",
     "date": "2025-08-01",
-    "summary": "파티푸들 쿠키를 입양하고 첫 산책까지 함께한 기록",
+    "summary": "분양받은 파티푸들 쿠키가 집과 아파트 단지 산책 코스에 적응해 가는 과정",
     "readingTime": "4 min",
     "tags": ["Pet", "Cookie", "Life"],
     "coverImage": "/log/images/cookie-arrival.webp"
@@ -30,7 +30,7 @@
     "slug": "opensource-future",
     "title": "오픈소스의 미래",
     "date": "2025-11-05",
-    "summary": "Open Source Summit Korea 2025에서 느낀 커뮤니티의 결",
+    "summary": "Open Source Summit Korea 2025에서 본 AI·오픈소스 운영 전략과 문서화 방식",
     "readingTime": "4 min",
     "tags": ["Community", "Open Source"],
     "coverImage": "/log/images/opensource.webp"
@@ -39,7 +39,7 @@
     "slug": "happy-hhkb",
     "title": "해피해킹 찬가",
     "date": "2025-11-15",
-    "summary": "초콜릿이 부서지는 듯한 키감을 찾아 세 번째이자 마지막으로 들인 HHKB 이야기",
+    "summary": "세 번째 HHKB를 기준 입력 장비로 삼기 위한 키맵·펌웨어·연습 스크립트 세팅기",
     "readingTime": "3 min",
     "tags": ["Hardware", "Keyboard", "HHKB"],
     "coverImage": "/log/images/hhkb.webp"
