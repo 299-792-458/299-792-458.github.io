@@ -27,15 +27,6 @@
     "coverImage": "/log/images/cookie-arrival.webp"
   },
   {
-    "slug": "ai-search-duet",
-    "title": "검색엔진 듀엣",
-    "date": "2025-03-01",
-    "summary": "과거와 현재 AI 검색 UI를 비교하며 기술적 진화를 정리한 로그",
-    "readingTime": "5 min",
-    "tags": ["AI", "Search", "RAG"],
-    "coverImage": "/log/images/ai-era.webp"
-  },
-  {
     "slug": "opensource-future",
     "title": "오픈소스의 미래",
     "date": "2025-11-05",
