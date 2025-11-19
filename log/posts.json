@@ -1,7 +1,7 @@
 [
   {
     "slug": "ai-era-code",
-    "title": "AI 시대, 코드를 연주하다",
+    "title": "AI와 합주하다",
     "date": "2025-01-01",
     "summary": "AI와 함께하는 즉흥 라이브 코딩 세션에서 발견한 리듬과 플레이북",
     "readingTime": "6 min",
@@ -10,7 +10,7 @@
   },
   {
     "slug": "hardware-ritual",
-    "title": "하드웨어의 서사, 인간의 리듬",
+    "title": "하드웨어 리추얼",
     "date": "2025-06-01",
     "summary": "새벽 랙 구성부터 모니터링까지, 손으로 짜 올린 서버 구축기",
     "readingTime": "5 min",
