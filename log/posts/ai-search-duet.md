@@ -18,8 +18,8 @@
 </pre>
 
 <video controls playsinline style="width:100%;max-width:720px">
-  <source src="/log/videos/search-2025.mp4" type="video/mp4" />
-  브라우저가 동영상을 지원하지 않습니다. <a href="/log/videos/search-2025.mp4">직접 내려받아 감상하세요.</a>
+  <source src="/log/videos/search-2025-current.mp4" type="video/mp4" />
+  브라우저가 동영상을 지원하지 않습니다. <a href="/log/videos/search-2025-current.mp4">직접 내려받아 감상하세요.</a>
 </video>
 
 기술적으로 가장 큰 차이는 검색 인덱스가 "정적 문서"에서 "실행 가능한 에이전트 네트워크"로 확장되었다는 점이다. 2023년에는 인덱싱 단계에서 딥링크와 스니펫을 준비하고, 추론 단계에서 일반화된 응답을 조합했다. 2025년에는 검색어마다 최소 두 개 이상의 도구 체인을 미리 부팅하고, 사용자 세션에 맞춰 시퀀스를 재구성한다. 즉, 검색은 단순한 정보 회수(retrieval)가 아니라, 계획 수립(planning)의 일부가 된 셈이다.
