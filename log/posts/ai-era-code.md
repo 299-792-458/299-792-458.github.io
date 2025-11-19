@@ -2,9 +2,9 @@
 
 새해 첫날에는 팀과 함께 "바이브 코딩 세션"을 열었다. 프롬프트 엔지니어링과 IDE 오토메이션을 엮어 악기처럼 연주하니 커서 이동 소리마저 박자를 맞췄다. 텍스트가 스크롤될 때마다 DAW의 파형 같은 감각이 들었고, 라이브러리 캐시를 비우는 소리조차 하이햇처럼 느껴졌다.
 
-```html
-<span style="color:#5AA7FF">"커서는 악기가 되고, 프롬프트는 리듬이 된다."</span>
-```
+<pre style="color:#5AA7FF;font-family:var(--font-mono,monospace);background:none;border:none;padding:0;margin:1em 0">
+"커서는 악기가 되고, 프롬프트는 리듬이 된다."
+</pre>
 
 ![라이브 코딩 세션의 감각을 기록한 사진](/log/images/ai-era.webp)
 

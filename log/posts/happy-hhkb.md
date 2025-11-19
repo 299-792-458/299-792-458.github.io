@@ -4,9 +4,9 @@
 
 처음 구매했던 무각 검정 모델은 무턱대고 들였다가 키 위치를 외우느라 한참 애먹었다. 그 경험 덕분에 지금은 손이 먼저 움직이고, 어두운 조명 아래에서도 타건 패턴이 춤을 춘다. 두 번째 모델은 출근길을 같이 달렸고, 이번 세 번째는 집필과 프로토타이핑을 전담할 예정이다.
 
-```html
-<span style="color:#5AA7FF">"타건은 속도가 아니라 숨을 고르는 리듬이다."</span>
-```
+<pre style="color:#5AA7FF;font-family:var(--font-mono,monospace);background:none;border:none;padding:0;margin:1em 0">
+"타건은 속도가 아니라 숨을 고르는 리듬이다."
+</pre>
 
 ![세 번째로 들인 해피해킹 키보드](/log/images/hhkb.webp)
 
