@@ -38,7 +38,7 @@
   {
     "slug": "hardware-ritual",
     "title": "하드웨어 리추얼",
-    "date": "2025-06-01",
+    "date": "2025-07-01",
     "summary": "랙 전력·발열 설계부터 케이블 토폴로지와 모니터링 룰까지 다시 짠 서버 구축기",
     "readingTime": "5 min",
     "tags": ["Hardware", "Infra"],
@@ -47,7 +47,7 @@
   {
     "slug": "cookie-party-poodle",
     "title": "쿠키의 첫 여름",
-    "date": "2025-08-01",
+    "date": "2025-06-01",
     "summary": "분양받은 파티푸들 쿠키가 집과 아파트 단지 산책 코스에 적응해 가는 과정",
     "readingTime": "4 min",
     "tags": ["Pet", "Cookie", "Life"],
