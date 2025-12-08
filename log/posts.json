@@ -9,6 +9,15 @@
     "coverImage": "/log/images/ai-era.webp"
   },
   {
+    "slug": "pelikan-ink-code",
+    "title": "잉크 루틴과 코드 리듬",
+    "date": "2025-02-01",
+    "summary": "펠리칸 만년필과 오로라 블랙 잉크로 필사 루틴을 만들며 코드 리듬을 다듬은 기록",
+    "readingTime": "4 min",
+    "tags": ["Writing", "Fountain Pen", "Programming"],
+    "coverImage": "/log/images/pelikan-aurora.webp"
+  },
+  {
     "slug": "hardware-ritual",
     "title": "하드웨어 리추얼",
     "date": "2025-06-01",
