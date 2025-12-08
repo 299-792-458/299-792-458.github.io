@@ -11,7 +11,7 @@
   {
     "slug": "pelikan-ink-code",
     "title": "만년필과 필사",
-    "date": "2025-02-01",
+    "date": "2019-02-01",
     "summary": "펠리칸 만년필과 오로라 블랙 잉크로 필사 루틴을 만들며 코드 리듬을 다듬은 기록",
     "readingTime": "4 min",
     "tags": ["Writing", "Fountain Pen", "Programming"],
@@ -20,7 +20,7 @@
   {
     "slug": "ultrafine-defect",
     "title": "울트라파인의 악몽",
-    "date": "2025-03-01",
+    "date": "2020-05-01",
     "summary": "최악의 울트라파인 액정 불량을 재현·기록하며 QA 루틴을 디버깅처럼 다듬은 경험",
     "readingTime": "4 min",
     "tags": ["Hardware", "Monitor", "QA"],
@@ -29,7 +29,7 @@
   {
     "slug": "hhkb-blackout",
     "title": "HHKB 블랙아웃",
-    "date": "2025-04-01",
+    "date": "2020-07-01",
     "summary": "무각 HHKB가 숫자·특수문자 리듬을 끊어 방출하고 도구 체크리스트를 다시 적은 기록",
     "readingTime": "3 min",
     "tags": ["Hardware", "Keyboard", "Workflow"],
