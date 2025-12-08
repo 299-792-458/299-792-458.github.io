@@ -18,6 +18,15 @@
     "coverImage": "/log/images/pelikan-aurora.webp"
   },
   {
+    "slug": "ultrafine-defect",
+    "title": "울트라파인 악몽",
+    "date": "2025-03-01",
+    "summary": "최악의 울트라파인 액정 불량을 재현·기록하며 QA 루틴을 디버깅처럼 다듬은 경험",
+    "readingTime": "4 min",
+    "tags": ["Hardware", "Monitor", "QA"],
+    "coverImage": "/log/images/ultrafine-wallpaper.webp"
+  },
+  {
     "slug": "hardware-ritual",
     "title": "하드웨어 리추얼",
     "date": "2025-06-01",
