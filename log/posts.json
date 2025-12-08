@@ -27,6 +27,15 @@
     "coverImage": "/log/images/ultrafine-wallpaper.webp"
   },
   {
+    "slug": "hhkb-blackout",
+    "title": "블랙아웃 HHKB와 작별",
+    "date": "2025-04-01",
+    "summary": "무각 HHKB가 숫자·특수문자 리듬을 끊어 방출하고 도구 체크리스트를 다시 적은 기록",
+    "readingTime": "3 min",
+    "tags": ["Hardware", "Keyboard", "Workflow"],
+    "coverImage": "/log/images/hhkb-blackout.webp"
+  },
+  {
     "slug": "hardware-ritual",
     "title": "하드웨어 리추얼",
     "date": "2025-06-01",
