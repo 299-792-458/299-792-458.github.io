@@ -33,7 +33,7 @@
     "summary": "새로 들인 Dell R250을 랙에 올리기 전 내부 상태와 전원, 케이블을 점검한 기록",
     "readingTime": "3 min",
     "tags": ["Hardware"],
-    "coverImage": "/log/images/server-inspection-r250.jpg"
+    "coverImage": "/log/images/server-inspection-r250.webp"
   },
   {
     "slug": "hhkb-blackout",
@@ -69,7 +69,7 @@
     "summary": "두꺼운 패딩을 입고 첫 겨울 산책을 나선 쿠키의 적응기",
     "readingTime": "3 min",
     "tags": ["Life"],
-    "coverImage": "/log/images/cookie-winter-walk.jpg"
+    "coverImage": "/log/images/cookie-winter-walk.webp"
   },
   {
     "slug": "cookie-first-grooming",
@@ -78,7 +78,7 @@
     "summary": "첫 미용을 준비하고 테디컷으로 정리한 뒤 회복 루틴을 기록한 이야기",
     "readingTime": "4 min",
     "tags": ["Life"],
-    "coverImage": "/log/images/cookie-grooming-1.jpg"
+    "coverImage": "/log/images/cookie-grooming-1.webp"
   },
   {
     "slug": "opensource-future",
