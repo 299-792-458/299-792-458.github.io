@@ -107,6 +107,34 @@
       text-decoration: none;
       font-size: 0.95rem;
     }
+    .pager {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 12px;
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .pager button {
+      background: var(--panel);
+      color: var(--ink);
+      border: 1px solid rgba(154, 158, 166, 0.4);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: border-color 120ms ease, color 120ms ease;
+    }
+    .pager button:hover:not(:disabled) {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .pager button:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
     .empty-state { text-align: center; color: var(--muted); padding: 60px 0; }
     @media (max-width: 640px) {
       a.log-link {
@@ -128,41 +156,111 @@
   </header>
   <main>
     <div id="log-grid" class="log-grid" aria-live="polite"></div>
+    <nav class="pager" aria-label="로그 페이지 네비게이션">
+      <button id="prev-btn" type="button">← 이전</button>
+      <span id="page-status" aria-live="polite"></span>
+      <button id="next-btn" type="button">다음 →</button>
+    </nav>
   </main>
   <script>
     const grid = document.getElementById("log-grid");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    const pageStatus = document.getElementById("page-status");
+    const PAGE_SIZE = 5;
+    let postsCache = [];
+    let totalPages = 1;
+    let currentPage = 1;
+
     async function loadPosts(){
       try{
         const res = await fetch("./posts.json", { cache: "no-store" });
         if(!res.ok) throw new Error("Failed to load posts");
-        const posts = await res.json();
+        const posts = await res.json() || [];
         if(!Array.isArray(posts) || posts.length === 0){
           grid.innerHTML = '<p class="empty-state">아직 작성된 로그가 없습니다.</p>';
+          updatePager(0, 0);
           return;
         }
-        posts
+        postsCache = posts
           .slice()
-          .sort((a, b) => new Date(b.date) - new Date(a.date))
-          .forEach(post => {
-            const article = document.createElement("article");
-            article.innerHTML = `
-              <a class="log-link" href="./post.html?slug=${post.slug}">
-                ${renderThumb(post)}
-                <span class="log-info">
-                  <span class="log-date">${formatDate(post.date)} · ${post.readingTime || ""}</span>
-                  <span class="log-title">${post.title}</span>
-                  ${post.summary ? `<span class="log-summary">${post.summary}</span>` : ""}
-                  ${renderTags(post.tags)}
-                </span>
-              </a>
-            `;
-            grid.appendChild(article);
-          });
+          .sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        const urlPage = Number(new URLSearchParams(location.search).get("page"));
+        currentPage = Number.isInteger(urlPage) && urlPage > 0 ? urlPage : 1;
+        totalPages = Math.max(1, Math.ceil(postsCache.length / PAGE_SIZE));
+        currentPage = Math.min(currentPage, totalPages);
+
+        renderPage();
       }catch(error){
         console.error(error);
         grid.innerHTML = '<p class="empty-state">로그를 불러오지 못했습니다.</p>';
+        updatePager(0, 0);
       }
     }
+
+    function renderPage(){
+      grid.innerHTML = "";
+      const start = (currentPage - 1) * PAGE_SIZE;
+      const slice = postsCache.slice(start, start + PAGE_SIZE);
+
+      if(slice.length === 0){
+        grid.innerHTML = '<p class="empty-state">더 이상 로그가 없습니다.</p>';
+        updatePager(currentPage, totalPages);
+        return;
+      }
+
+      slice.forEach(post => {
+        const article = document.createElement("article");
+        article.innerHTML = `
+          <a class="log-link" href="./post.html?slug=${post.slug}">
+            ${renderThumb(post)}
+            <span class="log-info">
+              <span class="log-date">${formatDate(post.date)} · ${post.readingTime || ""}</span>
+              <span class="log-title">${post.title}</span>
+              ${post.summary ? `<span class="log-summary">${post.summary}</span>` : ""}
+              ${renderTags(post.tags)}
+            </span>
+          </a>
+        `;
+        grid.appendChild(article);
+      });
+
+      updatePager(currentPage, totalPages);
+      updateQuery(currentPage);
+    }
+
+    function updatePager(page, total){
+      pageStatus.textContent = total > 0 ? `${page} / ${total}` : "";
+      prevBtn.disabled = page <= 1;
+      nextBtn.disabled = page >= total || total === 0;
+    }
+
+    function updateQuery(page){
+      const params = new URLSearchParams(location.search);
+      if(page === 1){
+        params.delete("page");
+      }else{
+        params.set("page", page);
+      }
+      const newUrl = `${location.pathname}${params.toString() ? `?${params}` : ""}`;
+      history.replaceState(null, "", newUrl);
+    }
+
+    prevBtn.addEventListener("click", () => {
+      if(currentPage > 1){
+        currentPage -= 1;
+        renderPage();
+      }
+    });
+
+    nextBtn.addEventListener("click", () => {
+      if(currentPage < totalPages){
+        currentPage += 1;
+        renderPage();
+      }
+    });
+
     function formatDate(date){
       if(!date) return "";
       const d = new Date(date);
