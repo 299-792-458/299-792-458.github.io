@@ -5,7 +5,7 @@
     "date": "2025-01-01",
     "summary": "프롬프트 모듈화와 IDE 자동화로 팀의 AI 개발 플레이북을 실험한 기록",
     "readingTime": "6 min",
-    "tags": ["AI", "Workflow", "Team"],
+    "tags": ["Programming"],
     "coverImage": "/log/images/ai-era.webp"
   },
   {
@@ -14,7 +14,7 @@
     "date": "2019-02-01",
     "summary": "펠리칸 만년필과 오로라 블랙 잉크로 필사 루틴을 만들며 코드 리듬을 다듬은 기록",
     "readingTime": "4 min",
-    "tags": ["Writing", "Fountain Pen", "Programming"],
+    "tags": ["Programming"],
     "coverImage": "/log/images/pelikan-aurora.webp"
   },
   {
@@ -23,7 +23,7 @@
     "date": "2020-05-01",
     "summary": "최악의 울트라파인 액정 불량을 재현·기록하며 QA 루틴을 디버깅처럼 다듬은 경험",
     "readingTime": "4 min",
-    "tags": ["Hardware", "Monitor", "QA"],
+    "tags": ["Hardware"],
     "coverImage": "/log/images/ultrafine-wallpaper.webp"
   },
   {
@@ -32,7 +32,7 @@
     "date": "2020-07-01",
     "summary": "무각 HHKB가 숫자·특수문자 리듬을 끊어 방출하고 도구 체크리스트를 다시 적은 기록",
     "readingTime": "3 min",
-    "tags": ["Hardware", "Keyboard", "Workflow"],
+    "tags": ["Hardware"],
     "coverImage": "/log/images/hhkb-blackout.webp"
   },
   {
@@ -41,7 +41,7 @@
     "date": "2025-07-01",
     "summary": "랙 전력·발열 설계부터 케이블 토폴로지와 모니터링 룰까지 다시 짠 서버 구축기",
     "readingTime": "5 min",
-    "tags": ["Hardware", "Infra"],
+    "tags": ["Hardware"],
     "coverImage": "/log/images/hardware.webp"
   },
   {
@@ -50,7 +50,7 @@
     "date": "2025-06-01",
     "summary": "분양받은 파티푸들 쿠키가 집과 아파트 단지 산책 코스에 적응해 가는 과정",
     "readingTime": "4 min",
-    "tags": ["Pet", "Cookie", "Life"],
+    "tags": ["Life"],
     "coverImage": "/log/images/cookie-arrival.webp"
   },
   {
@@ -59,7 +59,7 @@
     "date": "2025-11-05",
     "summary": "Open Source Summit Korea 2025에서 본 AI·오픈소스 운영 전략과 문서화 방식",
     "readingTime": "4 min",
-    "tags": ["Community", "Open Source"],
+    "tags": ["Community"],
     "coverImage": "/log/images/opensource.webp"
   },
   {
@@ -68,7 +68,7 @@
     "date": "2025-11-15",
     "summary": "세 번째 HHKB를 기준 입력 장비로 삼기 위한 키맵·펌웨어·연습 스크립트 세팅기",
     "readingTime": "3 min",
-    "tags": ["Hardware", "Keyboard", "HHKB"],
+    "tags": ["Hardware"],
     "coverImage": "/log/images/hhkb.webp"
   }
 ]
