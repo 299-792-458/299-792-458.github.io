@@ -107,6 +107,37 @@
       text-decoration: none;
       font-size: 0.95rem;
     }
+    .filter-bar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .filter-label {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-right: 4px;
+    }
+    .filter-button {
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--ink);
+      border: 1px solid rgba(154, 158, 166, 0.6);
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: border-color 120ms ease, color 120ms ease, background 120ms ease;
+    }
+    .filter-button:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .filter-button.active {
+      background: rgba(90, 167, 255, 0.12);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
     .pager {
       display: flex;
       justify-content: center;
@@ -152,6 +183,14 @@
     <a class="home-link" href="/">← 홈으로</a>
     <div>
       <h1>cat log.txt</h1>
+      <div class="filter-bar" aria-label="태그 필터">
+        <span class="filter-label">카테고리</span>
+        <button class="filter-button active" data-tag="">전체</button>
+        <button class="filter-button" data-tag="Programming">Programming</button>
+        <button class="filter-button" data-tag="Hardware">Hardware</button>
+        <button class="filter-button" data-tag="Life">Life</button>
+        <button class="filter-button" data-tag="Community">Community</button>
+      </div>
     </div>
   </header>
   <main>
@@ -167,10 +206,12 @@
     const prevBtn = document.getElementById("prev-btn");
     const nextBtn = document.getElementById("next-btn");
     const pageStatus = document.getElementById("page-status");
+    const filterButtons = Array.from(document.querySelectorAll(".filter-button"));
     const PAGE_SIZE = 5;
     let postsCache = [];
     let totalPages = 1;
     let currentPage = 1;
+    let activeTag = "";
 
     async function loadPosts(){
       try{
@@ -187,9 +228,9 @@
           .sort((a, b) => new Date(b.date) - new Date(a.date));
 
         const urlPage = Number(new URLSearchParams(location.search).get("page"));
+        activeTag = new URLSearchParams(location.search).get("tag") || "";
         currentPage = Number.isInteger(urlPage) && urlPage > 0 ? urlPage : 1;
-        totalPages = Math.max(1, Math.ceil(postsCache.length / PAGE_SIZE));
-        currentPage = Math.min(currentPage, totalPages);
+        syncFilterButtons();
 
         renderPage();
       }catch(error){
@@ -200,9 +241,23 @@
     }
 
     function renderPage(){
+      const filtered = activeTag
+        ? postsCache.filter(post => (post.tags || []).includes(activeTag))
+        : postsCache;
+
+      totalPages = filtered.length > 0 ? Math.ceil(filtered.length / PAGE_SIZE) : 0;
+      if(totalPages === 0){
+        grid.innerHTML = '<p class="empty-state">해당 카테고리에 로그가 없습니다.</p>';
+        updatePager(0, 0);
+        updateQuery(1);
+        return;
+      }
+
+      currentPage = Math.max(1, Math.min(currentPage, totalPages));
+
       grid.innerHTML = "";
       const start = (currentPage - 1) * PAGE_SIZE;
-      const slice = postsCache.slice(start, start + PAGE_SIZE);
+      const slice = filtered.slice(start, start + PAGE_SIZE);
 
       if(slice.length === 0){
         grid.innerHTML = '<p class="empty-state">더 이상 로그가 없습니다.</p>';
@@ -238,6 +293,11 @@
 
     function updateQuery(page){
       const params = new URLSearchParams(location.search);
+      if(activeTag){
+        params.set("tag", activeTag);
+      }else{
+        params.delete("tag");
+      }
       if(page === 1){
         params.delete("page");
       }else{
@@ -259,6 +319,24 @@
         currentPage += 1;
         renderPage();
       }
+    });
+
+    function syncFilterButtons(){
+      filterButtons.forEach(btn => {
+        const tag = btn.getAttribute("data-tag") || "";
+        btn.classList.toggle("active", tag === activeTag);
+      });
+    }
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const tag = btn.getAttribute("data-tag") || "";
+        if(tag === activeTag) return;
+        activeTag = tag;
+        currentPage = 1;
+        syncFilterButtons();
+        renderPage();
+      });
     });
 
     function formatDate(date){
