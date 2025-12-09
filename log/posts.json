@@ -54,6 +54,24 @@
     "coverImage": "/log/images/cookie-arrival.webp"
   },
   {
+    "slug": "cookie-first-winter",
+    "title": "쿠키의 첫 겨울",
+    "date": "2025-12-10",
+    "summary": "두꺼운 패딩을 입고 첫 겨울 산책을 나선 쿠키의 적응기",
+    "readingTime": "3 min",
+    "tags": ["Life"],
+    "coverImage": "/log/images/cookie-winter-walk.jpg"
+  },
+  {
+    "slug": "cookie-first-grooming",
+    "title": "쿠키의 첫 미용",
+    "date": "2025-02-20",
+    "summary": "첫 미용을 준비하고 테디컷으로 정리한 뒤 회복 루틴을 기록한 이야기",
+    "readingTime": "4 min",
+    "tags": ["Life"],
+    "coverImage": "/log/images/cookie-grooming-1.jpg"
+  },
+  {
     "slug": "opensource-future",
     "title": "오픈소스의 미래",
     "date": "2025-11-05",
