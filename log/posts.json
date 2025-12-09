@@ -27,6 +27,15 @@
     "coverImage": "/log/images/ultrafine-wallpaper.webp"
   },
   {
+    "slug": "dell-r250-first-check",
+    "title": "Dell R250 첫 점검",
+    "date": "2025-01-15",
+    "summary": "중고 Dell R250을 랙에 올리기 전 내부 상태와 전원, 케이블을 점검한 기록",
+    "readingTime": "3 min",
+    "tags": ["Hardware"],
+    "coverImage": "/log/images/server-inspection-r250.jpg"
+  },
+  {
     "slug": "hhkb-blackout",
     "title": "해피해킹 블랙아웃",
     "date": "2020-07-01",
