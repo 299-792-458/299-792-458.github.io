@@ -18,6 +18,16 @@
     "coverImage": "/log/images/server-r260-rack.webp"
   },
   {
+    "slug": "cookie-first-grooming-ritual",
+    "title": "쿠키의 첫 단장",
+    "date": "2025-06-30",
+    "summary": "브러싱, 눈꼽·귀 청소, 패드 케어까지 쿠키의 첫 전신 단장을 기록한 루틴",
+    "readingTime": "3 min",
+    "tags": ["Life"],
+    "coverImage": "/log/images/cookie-grooming-1.webp",
+    "video": "/log/videos/cookie-first-grooming.mp4"
+  },
+  {
     "slug": "pelikan-ink-code",
     "title": "만년필과 필사",
     "date": "2019-02-01",
