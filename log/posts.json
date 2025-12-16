@@ -5,7 +5,7 @@
     "date": "2025-01-01",
     "summary": "프롬프트 모듈화와 IDE 자동화로 팀의 AI 개발 플레이북을 실험한 기록",
     "readingTime": "6 min",
-    "tags": ["Programming"],
+    "tags": ["Code"],
     "coverImage": "/log/images/ai-era.webp"
   },
   {
@@ -14,7 +14,7 @@
     "date": "2025-12-15",
     "summary": "R260을 추가해 듀얼 서버를 구성하고 전원·케이블·iDRAC을 점검한 기록",
     "readingTime": "3 min",
-    "tags": ["Programming"],
+    "tags": ["Code"],
     "coverImage": "/log/images/server-r260-rack.webp"
   },
   {
@@ -42,7 +42,7 @@
     "date": "2020-05-01",
     "summary": "최악의 울트라파인 액정 불량을 재현·기록하며 QA 루틴을 디버깅처럼 다듬은 경험",
     "readingTime": "4 min",
-    "tags": ["Programming"],
+    "tags": ["Code"],
     "coverImage": "/log/images/ultrafine-wallpaper.webp"
   },
   {
@@ -51,7 +51,7 @@
     "date": "2025-05-20",
     "summary": "새로 들인 Dell R250을 랙에 올리기 전 내부 상태와 전원, 케이블을 점검한 기록",
     "readingTime": "3 min",
-    "tags": ["Programming"],
+    "tags": ["Code"],
     "coverImage": "/log/images/server-inspection-r250.webp"
   },
   {
@@ -60,7 +60,7 @@
     "date": "2020-07-01",
     "summary": "무각 HHKB가 숫자·특수문자 리듬을 끊어 방출하고 도구 체크리스트를 다시 적은 기록",
     "readingTime": "3 min",
-    "tags": ["Programming"],
+    "tags": ["Code"],
     "coverImage": "/log/images/hhkb-blackout.webp"
   },
   {
@@ -69,7 +69,7 @@
     "date": "2025-07-01",
     "summary": "랙 전력·발열 설계부터 케이블 토폴로지와 모니터링 룰까지 다시 짠 서버 구축기",
     "readingTime": "5 min",
-    "tags": ["Programming"],
+    "tags": ["Code"],
     "coverImage": "/log/images/hardware.webp"
   },
   {
@@ -132,7 +132,7 @@
     "date": "2025-11-15",
     "summary": "세 번째 HHKB를 기준 입력 장비로 삼기 위한 키맵·펌웨어·연습 스크립트 세팅기",
     "readingTime": "3 min",
-    "tags": ["Programming"],
+    "tags": ["Code"],
     "coverImage": "/log/images/hhkb.webp"
   }
 ]
