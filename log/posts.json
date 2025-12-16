@@ -9,6 +9,15 @@
     "coverImage": "/log/images/ai-era.webp"
   },
   {
+    "slug": "dell-r260-scale-out",
+    "title": "Dell R260 증설 리추얼",
+    "date": "2025-12-15",
+    "summary": "R260을 추가해 듀얼 서버를 구성하고 전원·케이블·iDRAC을 점검한 기록",
+    "readingTime": "3 min",
+    "tags": ["Programming"],
+    "coverImage": "/log/images/server-r260-rack.webp"
+  },
+  {
     "slug": "pelikan-ink-code",
     "title": "만년필과 필사",
     "date": "2019-02-01",
