@@ -134,5 +134,14 @@
     "readingTime": "3 min",
     "tags": ["Code"],
     "coverImage": "/log/images/hhkb.webp"
+  },
+  {
+    "slug": "james-webb-time-machine",
+    "title": "라그랑주에 올린 타임머신",
+    "date": "2021-12-01",
+    "summary": "제임스웹이 L2 라그랑주에서 포착한 심우주가 인류의 오래된 질문을 다시 비춘 순간",
+    "readingTime": "3 min",
+    "tags": ["Think"],
+    "coverImage": "/log/images/james-webb-deep-field.webp"
   }
 ]
