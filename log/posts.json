@@ -143,5 +143,15 @@
     "readingTime": "3 min",
     "tags": ["Think"],
     "coverImage": "/log/images/james-webb-deep-field.webp"
+  },
+  {
+    "slug": "gpt-search-disaster-alert",
+    "title": "재난문자와 GPT 검색 시연",
+    "date": "2023-06-01",
+    "summary": "위급재난문자 직후 GPT 검색 기능을 시연하며 느린 응답 속에서도 생각의 흐름을 확인한 기록",
+    "readingTime": "2 min",
+    "tags": ["Code"],
+    "coverImage": "/log/images/thinking-icon.svg",
+    "video": "/log/videos/gpt-search-disaster-alert.mp4"
   }
 ]
