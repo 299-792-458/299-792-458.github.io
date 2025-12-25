@@ -153,5 +153,24 @@
     "tags": ["Code"],
     "coverImage": "/log/images/thinking-icon.svg",
     "video": "/log/videos/gpt-search-disaster-alert.mp4"
+  },
+  {
+    "slug": "fine-dining-michelin-thoughts",
+    "title": "파인다이닝과 미슐랭 별",
+    "date": "2022-07-01",
+    "summary": "파인다이닝 코스에서 문화와 리듬을 맛보며 미슐랭 별의 의미를 다시 생각한 기록",
+    "readingTime": "3 min",
+    "tags": ["Life"],
+    "coverImage": "/log/images/fine-dining-michelin-thoughts.webp"
+  },
+  {
+    "slug": "marketing-inevitability",
+    "title": "마케팅의 본질과 좋아하는 광고 영상",
+    "date": "2023-02-01",
+    "summary": "서피스북과 맥북 프로 광고를 보며 마케팅이 필연을 만드는 방식에 대해 정리한 기록",
+    "readingTime": "2 min",
+    "tags": ["Think"],
+    "coverImage": "/log/images/thinking-icon.svg",
+    "video": "/log/videos/surfacebook-video.mp4"
   }
 ]
