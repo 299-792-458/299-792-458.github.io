@@ -151,7 +151,7 @@
     "summary": "위급재난문자 직후 GPT 검색 기능을 시연하며 느린 응답 속에서도 생각의 흐름을 확인한 기록",
     "readingTime": "2 min",
     "tags": ["Code"],
-    "coverImage": "/log/images/thinking-icon.svg",
+    "coverImage": "/log/images/gpt-search-disaster-alert-thumb.webp",
     "video": "/log/videos/gpt-search-disaster-alert.mp4"
   },
   {
@@ -170,7 +170,7 @@
     "summary": "서피스북과 맥북 프로 광고를 보며 마케팅이 필연을 만드는 방식에 대해 정리한 기록",
     "readingTime": "2 min",
     "tags": ["Think"],
-    "coverImage": "/log/images/thinking-icon.svg",
+    "coverImage": "/log/images/marketing-surfacebook-thumb.webp",
     "video": "/log/videos/surfacebook-video.mp4"
   }
 ]
