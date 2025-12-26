@@ -564,21 +564,6 @@
       }
     }
 
-    .lang{
-      position:fixed;
-      right:20px;
-      top:20px;
-      border:1px solid var(--line);
-      background:rgba(16,16,16,.85);
-      backdrop-filter:blur(6px);
-      color:var(--ink);
-      font-weight:400;
-      border-radius:50px;
-      padding:6px 14px;
-      cursor:pointer;
-      z-index:100
-    }
-
     ul{
       list-style:none;
       padding-left:24px;
@@ -914,13 +899,13 @@
         <img class="brand-avatar" src="assets/profile.jpg" alt="Hwan profile thumbnail" />
       </a>
       <nav class="header-nav" aria-label="주요 메뉴">
-        <a class="nav-link" href="#hero" data-i18n="nav.hero">메인</a>
-        <a class="nav-link" href="#introduce" data-i18n="nav.introduce">소개</a>
-        <a class="nav-link" href="#skills" data-i18n="nav.skills">기술</a>
-        <a class="nav-link" href="#experience" data-i18n="nav.experience">경력</a>
-        <a class="nav-link" href="#projects" data-i18n="nav.projects">프로젝트</a>
-        <a class="nav-link" href="#presentation" data-i18n="nav.presentation">발표</a>
-        <a class="nav-link" href="#log" data-i18n="nav.log">로그</a>
+        <a class="nav-link" href="#hero">메인</a>
+        <a class="nav-link" href="#introduce">소개</a>
+        <a class="nav-link" href="#skills">기술</a>
+        <a class="nav-link" href="#experience">경력</a>
+        <a class="nav-link" href="#projects">프로젝트</a>
+        <a class="nav-link" href="#presentation">발표</a>
+        <a class="nav-link" href="#log">로그</a>
       </nav>
       <div class="mobile-brand-label" aria-hidden="true">299-792-458</div>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="메뉴 열기">
@@ -933,13 +918,13 @@
     </div>
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
       <nav class="mobile-nav" aria-label="모바일 메뉴">
-        <a class="mobile-link" href="#hero" data-i18n="nav.hero">메인</a>
-        <a class="mobile-link" href="#introduce" data-i18n="nav.introduce">소개</a>
-        <a class="mobile-link" href="#skills" data-i18n="nav.skills">기술</a>
-        <a class="mobile-link" href="#experience" data-i18n="nav.experience">경력</a>
-        <a class="mobile-link" href="#projects" data-i18n="nav.projects">프로젝트</a>
-        <a class="mobile-link" href="#presentation" data-i18n="nav.presentation">발표</a>
-        <a class="mobile-link" href="#log" data-i18n="nav.log">로그</a>
+        <a class="mobile-link" href="#hero">메인</a>
+        <a class="mobile-link" href="#introduce">소개</a>
+        <a class="mobile-link" href="#skills">기술</a>
+        <a class="mobile-link" href="#experience">경력</a>
+        <a class="mobile-link" href="#projects">프로젝트</a>
+        <a class="mobile-link" href="#presentation">발표</a>
+        <a class="mobile-link" href="#log">로그</a>
       </nav>
     </div>
   </header>
@@ -949,7 +934,7 @@
       <img class="avatar" src="assets/profile.jpg" alt="Hwan profile photo" />
       <div class="hero-text">
         <h1 id="name">Hwan</h1>
-        <p class="subtitle" data-i18n="hero.role">
+        <p class="subtitle">
           <span class="line">AI Researcher</span><span class="sep"> · </span>
           <span class="line">Full-Stack Architect</span><span class="sep"> · </span>
           <span class="line">Systems Leader</span>
@@ -977,11 +962,11 @@
 
     <section id="introduce">
       <div class="terminal-window">
-        <div class="section-title" data-i18n="introduce.title">cat introduce.txt</div>
+        <div class="section-title">cat introduce.txt</div>
         <div class="terminal-body terminal-content">
-          <p data-i18n="introduce.text1">프론트엔드, 백엔드 그리고 인공지능 연구 전반을 아우르는 풀스택 개발자입니다.
+          <p>프론트엔드, 백엔드 그리고 인공지능 연구 전반을 아우르는 풀스택 개발자입니다.
 AI 프롬프트 엔지니어링부터 대규모 인프라 구축까지 정밀한 완성도 높은 시스템을 설계합니다.</p>
-          <p data-i18n="introduce.text2">기술을 다루는 사람이 아니라, 사고로 문제를 해결하는 개발자입니다.
+          <p>기술을 다루는 사람이 아니라, 사고로 문제를 해결하는 개발자입니다.
 코드는 사고의 결과이며, 시스템은 논리로 다듬어진 사고의 구조라 믿습니다.</p>
         </div>
       </div>
@@ -989,37 +974,37 @@ AI 프롬프트 엔지니어링부터 대규모 인프라 구축까지 정밀한
 
     <section id="skills">
       <div class="terminal-window">
-        <div class="section-title" data-i18n="skills.title">cat skills.txt</div>
+        <div class="section-title">cat skills.txt</div>
         <div class="terminal-body terminal-content">
           <div class="skill-groups">
             <div class="skill-group">
-              <h3 class="skill-heading" data-i18n="skills.lang">Languages</h3>
+              <h3 class="skill-heading">Languages</h3>
               <ul class="skill-list">
-                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 7c1.1-1.8 2.4-3 3.5-3s2.5 1 2.5 2.5S13.5 10 12.5 10 10 11 10 12.5 11.5 15 12.5 15 15 16 15 17.5 13.6 20 12.5 20 10 18.8 9 17"/></svg></span><span class="skill-label" data-i18n="skills.language.cpp">C++</span></li>
-                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12c0-3 2.2-5 5-5h3v2H10a3 3 0 0 0 0 6h3v2H10c-2.8 0-5-2-5-5Z"/><circle cx="17" cy="12" r="4"/><path d="M15 12h4"/><path d="M17 10v4"/></svg></span><span class="skill-label" data-i18n="skills.language.go">Go</span></li>
-                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 9h8"/><path d="M8 15h6"/><path d="M14 12h4"/></svg></span><span class="skill-label" data-i18n="skills.language.javascript">JavaScript</span></li>
-                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 7c1-2 3-3 4-3s3 .8 3 2.5S13 9 12 9s-3 1-3 2.5S10.5 15 12 15s3 1 3 2.5S13 20 12 20s-3-1-4-3"/><path d="M12 6v2"/><path d="M12 16v2"/></svg></span><span class="skill-label" data-i18n="skills.language.python">Python</span></li>
-                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="M9 9h6l1 3-4 4-4-4z"/><path d="M12 4v2"/></svg></span><span class="skill-label" data-i18n="skills.language.rust">Rust</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 7c1.1-1.8 2.4-3 3.5-3s2.5 1 2.5 2.5S13.5 10 12.5 10 10 11 10 12.5 11.5 15 12.5 15 15 16 15 17.5 13.6 20 12.5 20 10 18.8 9 17"/></svg></span><span class="skill-label">C++</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12c0-3 2.2-5 5-5h3v2H10a3 3 0 0 0 0 6h3v2H10c-2.8 0-5-2-5-5Z"/><circle cx="17" cy="12" r="4"/><path d="M15 12h4"/><path d="M17 10v4"/></svg></span><span class="skill-label">Go</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 9h8"/><path d="M8 15h6"/><path d="M14 12h4"/></svg></span><span class="skill-label">JavaScript</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 7c1-2 3-3 4-3s3 .8 3 2.5S13 9 12 9s-3 1-3 2.5S10.5 15 12 15s3 1 3 2.5S13 20 12 20s-3-1-4-3"/><path d="M12 6v2"/><path d="M12 16v2"/></svg></span><span class="skill-label">Python</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="M9 9h6l1 3-4 4-4-4z"/><path d="M12 4v2"/></svg></span><span class="skill-label">Rust</span></li>
               </ul>
             </div>
             <div class="skill-group">
-              <h3 class="skill-heading" data-i18n="skills.frameworks">Frameworks &amp; Libraries</h3>
+              <h3 class="skill-heading">Frameworks &amp; Libraries</h3>
               <ul class="skill-list">
-                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 8h9"/><path d="M6 12h12"/><path d="M9 16h9"/></svg></span><span class="skill-label" data-i18n="skills.framework.next">Next.js</span></li>
-                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h16v10H4Z"/><path d="M4 10h16"/><path d="M9 14h6"/><path d="M12 7V4"/></svg></span><span class="skill-label" data-i18n="skills.framework.node">Node.js</span></li>
-                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4 20 8v8l-8 4-8-4V8Z"/><path d="M8.5 14.5 12 10l3.5 4.5"/></svg></span><span class="skill-label" data-i18n="skills.framework.svelte">SvelteKit</span></li>
-                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10"/><path d="M8 9.5 16 14"/><path d="M16 9.5 8 14"/></svg></span><span class="skill-label" data-i18n="skills.framework.react">React</span></li>
-                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 5h12l2 3.5-2 3.5H6L4 8.5z"/><path d="M6 12h12l2 3.5-2 3.5H6l-2-3.5z"/><path d="M9 8.5h6"/><path d="M9 15.5h6"/></svg></span><span class="skill-label" data-i18n="skills.framework.spring">Spring Boot</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 8h9"/><path d="M6 12h12"/><path d="M9 16h9"/></svg></span><span class="skill-label">Next.js</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h16v10H4Z"/><path d="M4 10h16"/><path d="M9 14h6"/><path d="M12 7V4"/></svg></span><span class="skill-label">Node.js</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4 20 8v8l-8 4-8-4V8Z"/><path d="M8.5 14.5 12 10l3.5 4.5"/></svg></span><span class="skill-label">SvelteKit</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10"/><path d="M8 9.5 16 14"/><path d="M16 9.5 8 14"/></svg></span><span class="skill-label">React</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 5h12l2 3.5-2 3.5H6L4 8.5z"/><path d="M6 12h12l2 3.5-2 3.5H6l-2-3.5z"/><path d="M9 8.5h6"/><path d="M9 15.5h6"/></svg></span><span class="skill-label">Spring Boot</span></li>
               </ul>
             </div>
             <div class="skill-group">
-              <h3 class="skill-heading" data-i18n="skills.platforms">Platforms &amp; Databases</h3>
+              <h3 class="skill-heading">Platforms &amp; Databases</h3>
               <ul class="skill-list">
-                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h16v10H4Z"/><path d="M4 10h16"/><path d="M9 14h6"/><path d="M7 4h10"/></svg></span><span class="skill-label" data-i18n="skills.platform.aws">AWS</span></li>
-                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="2"/><path d="M7 7V4h10v3"/><path d="M7 17v3h10v-3"/><path d="M10 11h4"/></svg></span><span class="skill-label" data-i18n="skills.platform.docker">Docker</span></li>
-                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8M8 12h5M8 15h3"/><path d="M14 15h2"/></svg></span><span class="skill-label" data-i18n="skills.platform.mongo">MongoDB</span></li>
-                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6.5" rx="7" ry="2.5"/><path d="M5 6.5V12c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5V6.5"/><path d="M5 11.5V17c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-5.5"/></svg></span><span class="skill-label" data-i18n="skills.platform.mysql">MySQL</span></li>
-                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="7" rx="7" ry="3"/><path d="M5 7v5c0 1.7 3.1 3 7 3s7-1.3 7-3V7"/><path d="M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/><path d="M5 16c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg></span><span class="skill-label" data-i18n="skills.platform.postgres">PostgreSQL</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h16v10H4Z"/><path d="M4 10h16"/><path d="M9 14h6"/><path d="M7 4h10"/></svg></span><span class="skill-label">AWS</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="2"/><path d="M7 7V4h10v3"/><path d="M7 17v3h10v-3"/><path d="M10 11h4"/></svg></span><span class="skill-label">Docker</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8M8 12h5M8 15h3"/><path d="M14 15h2"/></svg></span><span class="skill-label">MongoDB</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6.5" rx="7" ry="2.5"/><path d="M5 6.5V12c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5V6.5"/><path d="M5 11.5V17c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-5.5"/></svg></span><span class="skill-label">MySQL</span></li>
+                <li><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="7" rx="7" ry="3"/><path d="M5 7v5c0 1.7 3.1 3 7 3s7-1.3 7-3V7"/><path d="M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/><path d="M5 16c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg></span><span class="skill-label">PostgreSQL</span></li>
               </ul>
             </div>
           </div>
@@ -1029,70 +1014,70 @@ AI 프롬프트 엔지니어링부터 대규모 인프라 구축까지 정밀한
 
     <section id="experience">
       <div class="terminal-window">
-        <div class="section-title" data-i18n="exp.title">cat experience.txt</div>
+        <div class="section-title">cat experience.txt</div>
         <div class="terminal-body terminal-content">
           <div class="row">
-            <h2 class="row-title" data-i18n="exp.item5.company">우리미래연구소</h2>
-            <h2 class="row-title row-title-muted" data-i18n="exp.item5.role">연구생</h2>
-            <span class="when" data-i18n="exp.item5.period">2020.01 ~ 2022.12</span>
+            <h2 class="row-title">우리미래연구소</h2>
+            <h2 class="row-title row-title-muted">연구생</h2>
+            <span class="when">2020.01 ~ 2022.12</span>
             <div class="org">
-              <h3 class="org-line" data-i18n="exp.item5.detail1">논문·기술 보고서 조사</h3>
-              <h3 class="org-line" data-i18n="exp.item5.detail2">실험 데이터셋 수집·정제·라벨링 지원</h3>
-              <h3 class="org-line" data-i18n="exp.item5.detail3">모델 학습·평가 보조와 결과 정리</h3>
-              <h3 class="org-line" data-i18n="exp.item5.detail4">실험 환경 관리 및 재현성 문서화</h3>
-              <h3 class="org-line" data-i18n="exp.item5.detail5">연구 발표 자료 준비와 내부 공유 지원</h3>
+              <h3 class="org-line">논문·기술 보고서 조사</h3>
+              <h3 class="org-line">실험 데이터셋 수집·정제·라벨링 지원</h3>
+              <h3 class="org-line">모델 학습·평가 보조와 결과 정리</h3>
+              <h3 class="org-line">실험 환경 관리 및 재현성 문서화</h3>
+              <h3 class="org-line">연구 발표 자료 준비와 내부 공유 지원</h3>
             </div>
           </div>
 
           <div class="row">
-            <h2 class="row-title" data-i18n="exp.item1.company">우리미래연구소</h2>
-            <h2 class="row-title row-title-muted" data-i18n="exp.item1.role">인공지능 연구 수석</h2>
-            <span class="when" data-i18n="exp.item1.period">2023.01 ~</span>
+            <h2 class="row-title">우리미래연구소</h2>
+            <h2 class="row-title row-title-muted">인공지능 연구 수석</h2>
+            <span class="when">2023.01 ~</span>
             <div class="org">
-              <h3 class="org-line" data-i18n="exp.item1.detail1">LLM 실험·보안·정렬 연구 총괄</h3>
-              <h3 class="org-line" data-i18n="exp.item1.detail2">프롬프트 보안 정책과 가이드라인 설계</h3>
-              <h3 class="org-line" data-i18n="exp.item1.detail3">MLOps 파이프라인 및 모델 배포 자동화</h3>
-              <h3 class="org-line" data-i18n="exp.item1.detail4">데이터 거버넌스와 품질 검증 체계 구축</h3>
-              <h3 class="org-line" data-i18n="exp.item1.detail5">연구 조직 운영과 기술 교육 리드</h3>
+              <h3 class="org-line">LLM 실험·보안·정렬 연구 총괄</h3>
+              <h3 class="org-line">프롬프트 보안 정책과 가이드라인 설계</h3>
+              <h3 class="org-line">MLOps 파이프라인 및 모델 배포 자동화</h3>
+              <h3 class="org-line">데이터 거버넌스와 품질 검증 체계 구축</h3>
+              <h3 class="org-line">연구 조직 운영과 기술 교육 리드</h3>
             </div>
           </div>
 
           <div class="row">
-            <h2 class="row-title" data-i18n="exp.item2.company">MN Co.</h2>
-            <h2 class="row-title row-title-muted" data-i18n="exp.item2.role">총괄 웹 디자이너</h2>
-            <span class="when" data-i18n="exp.item2.period">2024.06 ~ 2024.12</span>
+            <h2 class="row-title">MN Co.</h2>
+            <h2 class="row-title row-title-muted">총괄 웹 디자이너</h2>
+            <span class="when">2024.06 ~ 2024.12</span>
             <div class="org">
-              <h3 class="org-line" data-i18n="exp.item2.detail1">브랜드 디자인 및 컴포넌트 아키텍처 구축</h3>
-              <h3 class="org-line" data-i18n="exp.item2.detail2">SPA 기반 반응형 프런트엔드 개발</h3>
-              <h3 class="org-line" data-i18n="exp.item2.detail3">스토리북·테스팅 파이프라인으로 UI 품질 확보</h3>
-              <h3 class="org-line" data-i18n="exp.item2.detail4">웹 성능 최적화와 LCP·CLS 개선</h3>
-              <h3 class="org-line" data-i18n="exp.item2.detail5">다국어 콘텐츠 운영 및 협업 워크플로 설계</h3>
+              <h3 class="org-line">브랜드 디자인 및 컴포넌트 아키텍처 구축</h3>
+              <h3 class="org-line">SPA 기반 반응형 프런트엔드 개발</h3>
+              <h3 class="org-line">스토리북·테스팅 파이프라인으로 UI 품질 확보</h3>
+              <h3 class="org-line">웹 성능 최적화와 LCP·CLS 개선</h3>
+              <h3 class="org-line">다국어 콘텐츠 운영 및 협업 워크플로 설계</h3>
             </div>
           </div>
 
           <div class="row">
-            <h2 class="row-title" data-i18n="exp.item3.company">Team DevCrew</h2>
-            <h2 class="row-title row-title-muted" data-i18n="exp.item3.role">개발팀 팀장</h2>
-            <span class="when" data-i18n="exp.item3.period">2025.01 ~</span>
+            <h2 class="row-title">Team DevCrew</h2>
+            <h2 class="row-title row-title-muted">개발팀 팀장</h2>
+            <span class="when">2025.01 ~</span>
             <div class="org">
-              <h3 class="org-line" data-i18n="exp.item3.detail1">도메인 기반 마이크로서비스 아키텍처 설계</h3>
-              <h3 class="org-line" data-i18n="exp.item3.detail2">IaC·CI/CD 자동화로 배포 효율 극대화</h3>
-              <h3 class="org-line" data-i18n="exp.item3.detail3">관측성·로그·알림 체계 표준화</h3>
-              <h3 class="org-line" data-i18n="exp.item3.detail4">애자일 협업 프로세스와 의사결정 구조 확립</h3>
-              <h3 class="org-line" data-i18n="exp.item3.detail5">코드 품질 가이드와 리뷰 문화 정착</h3>
+              <h3 class="org-line">도메인 기반 마이크로서비스 아키텍처 설계</h3>
+              <h3 class="org-line">IaC·CI/CD 자동화로 배포 효율 극대화</h3>
+              <h3 class="org-line">관측성·로그·알림 체계 표준화</h3>
+              <h3 class="org-line">애자일 협업 프로세스와 의사결정 구조 확립</h3>
+              <h3 class="org-line">코드 품질 가이드와 리뷰 문화 정착</h3>
             </div>
           </div>
 
           <div class="row">
-            <h2 class="row-title" data-i18n="exp.item4.company">온누리PG</h2>
-            <h2 class="row-title row-title-muted" data-i18n="exp.item4.role">개발부 부장</h2>
-            <span class="when" data-i18n="exp.item4.period">2025.05 ~</span>
+            <h2 class="row-title">온누리PG</h2>
+            <h2 class="row-title row-title-muted">개발부 부장</h2>
+            <span class="when">2025.05 ~</span>
             <div class="org">
-              <h3 class="org-line" data-i18n="exp.item4.detail1">결제 게이트웨이 및 정산 아키텍처 고도화</h3>
-              <h3 class="org-line" data-i18n="exp.item4.detail2">보안 인증·암호화·위협 대응 체계 강화</h3>
-              <h3 class="org-line" data-i18n="exp.item4.detail3">실시간 정산 파이프라인과 복구 전략 수립</h3>
-              <h3 class="org-line" data-i18n="exp.item4.detail4">인프라 자동화와 비용 효율화 전략 설계</h3>
-              <h3 class="org-line" data-i18n="exp.item4.detail5">규제 준수·감사 대응 프로세스 정비</h3>
+              <h3 class="org-line">결제 게이트웨이 및 정산 아키텍처 고도화</h3>
+              <h3 class="org-line">보안 인증·암호화·위협 대응 체계 강화</h3>
+              <h3 class="org-line">실시간 정산 파이프라인과 복구 전략 수립</h3>
+              <h3 class="org-line">인프라 자동화와 비용 효율화 전략 설계</h3>
+              <h3 class="org-line">규제 준수·감사 대응 프로세스 정비</h3>
             </div>
           </div>
         </div>
@@ -1101,44 +1086,44 @@ AI 프롬프트 엔지니어링부터 대규모 인프라 구축까지 정밀한
 
     <section id="projects">
       <div class="terminal-window">
-        <div class="section-title" data-i18n="proj.title">cat projects.txt</div>
+        <div class="section-title">cat projects.txt</div>
         <div class="terminal-body terminal-content">
           <div class="row">
-            <h2 class="row-title" data-i18n="proj.block1.title">프롬프트 AI 연구 플랫폼</h2>
-            <h2 class="row-title row-title-muted" data-i18n="proj.block1.org">우리미래연구소</h2>
-            <span class="when" data-i18n="proj.block1.period">2023.01 ~</span>
+            <h2 class="row-title">프롬프트 AI 연구 플랫폼</h2>
+            <h2 class="row-title row-title-muted">우리미래연구소</h2>
+            <span class="when">2023.01 ~</span>
             <ul>
-              <li data-i18n="proj.block1.detail1">프롬프트 학습 데이터셋 표준화 및 안전성 검증</li>
-              <li data-i18n="proj.block1.detail2">고정확도 응답 최적화와 정렬 워크플로 설계</li>
-              <li data-i18n="proj.block1.detail3">적대적 공격/방어 실험과 리포트 총괄</li>
-              <li data-i18n="proj.block1.detail4">데이터 수집 및 평가 자동화 파이프라인 구축</li>
-              <li data-i18n="proj.block1.detail5">공동 연구 리포트와 정책 제안서 작성</li>
+              <li>프롬프트 학습 데이터셋 표준화 및 안전성 검증</li>
+              <li>고정확도 응답 최적화와 정렬 워크플로 설계</li>
+              <li>적대적 공격/방어 실험과 리포트 총괄</li>
+              <li>데이터 수집 및 평가 자동화 파이프라인 구축</li>
+              <li>공동 연구 리포트와 정책 제안서 작성</li>
             </ul>
           </div>
 
           <div class="row">
-            <h2 class="row-title" data-i18n="proj.block2.title">쇼핑몰 웹 서비스 전면 구축</h2>
-            <h2 class="row-title row-title-muted" data-i18n="proj.block2.org">MN Co.</h2>
-            <span class="when" data-i18n="proj.block2.period">2024.06 ~ 2024.12</span>
+            <h2 class="row-title">쇼핑몰 웹 서비스 전면 구축</h2>
+            <h2 class="row-title row-title-muted">MN Co.</h2>
+            <span class="when">2024.06 ~ 2024.12</span>
             <ul>
-              <li data-i18n="proj.block2.detail1">브랜드 디자인과 반응형 UI 전면 재구축</li>
-              <li data-i18n="proj.block2.detail2">API 통합 및 nginx 캐싱·지연 최적화</li>
-              <li data-i18n="proj.block2.detail3">데이터 사용자 여정 설계로 전환율·안정성 향상</li>
-              <li data-i18n="proj.block2.detail4">A/B 테스트와 퍼널 분석으로 UX 개선</li>
-              <li data-i18n="proj.block2.detail5">마케팅·CS 조직 협업 운영 대시보드 구축</li>
+              <li>브랜드 디자인과 반응형 UI 전면 재구축</li>
+              <li>API 통합 및 nginx 캐싱·지연 최적화</li>
+              <li>데이터 사용자 여정 설계로 전환율·안정성 향상</li>
+              <li>A/B 테스트와 퍼널 분석으로 UX 개선</li>
+              <li>마케팅·CS 조직 협업 운영 대시보드 구축</li>
             </ul>
           </div>
 
           <div class="row">
-            <h2 class="row-title" data-i18n="proj.block3.title">금융 웹 인프라 통합</h2>
-            <h2 class="row-title row-title-muted" data-i18n="proj.block3.org">Team DevCrew × 온누리PG</h2>
-            <span class="when" data-i18n="proj.block3.period">2025.05 ~</span>
+            <h2 class="row-title">금융 웹 인프라 통합</h2>
+            <h2 class="row-title row-title-muted">Team DevCrew × 온누리PG</h2>
+            <span class="when">2025.05 ~</span>
             <ul>
-              <li data-i18n="proj.block3.detail1">결제·정산 백엔드 보안 아키텍처 재설계</li>
-              <li data-i18n="proj.block3.detail2">실시간 트랜잭션 인증·암호화 체계 구축</li>
-              <li data-i18n="proj.block3.detail3">금융 데이터 정합성 및 SRE 기반 관측성 확보</li>
-              <li data-i18n="proj.block3.detail4">의사결정 인터페이스 정의로 품질과 속도 개선</li>
-              <li data-i18n="proj.block3.detail5">PCI-DSS 준수 체계를 프로덕션에 적용</li>
+              <li>결제·정산 백엔드 보안 아키텍처 재설계</li>
+              <li>실시간 트랜잭션 인증·암호화 체계 구축</li>
+              <li>금융 데이터 정합성 및 SRE 기반 관측성 확보</li>
+              <li>의사결정 인터페이스 정의로 품질과 속도 개선</li>
+              <li>PCI-DSS 준수 체계를 프로덕션에 적용</li>
             </ul>
           </div>
         </div>
@@ -1147,28 +1132,28 @@ AI 프롬프트 엔지니어링부터 대규모 인프라 구축까지 정밀한
 
     <section id="presentation">
       <div class="terminal-window">
-        <div class="section-title" data-i18n="pres.title">cat presentations.txt</div>
+        <div class="section-title">cat presentations.txt</div>
         <div class="terminal-body terminal-content">
           <ul class="presentation-list">
             <li class="presentation-item">
-              <span class="presentation-date" data-i18n="pres.item1.date">2023.12.10</span>
-              <span class="presentation-title" data-i18n="pres.item1.title">“언어로 사고하는 인공지능”</span>
-              <span class="presentation-location" data-i18n="pres.item1.location">우리미래연구소 세미나</span>
+              <span class="presentation-date">2023.12.10</span>
+              <span class="presentation-title">“언어로 사고하는 인공지능”</span>
+              <span class="presentation-location">우리미래연구소 세미나</span>
             </li>
             <li class="presentation-item">
-              <span class="presentation-date" data-i18n="pres.item2.date">2024.07.15</span>
-              <span class="presentation-title" data-i18n="pres.item2.title">“시각에서 설계로, UX가 시스템을 이끈다.”</span>
-              <span class="presentation-location" data-i18n="pres.item2.location">MN Co. 세미나</span>
+              <span class="presentation-date">2024.07.15</span>
+              <span class="presentation-title">“시각에서 설계로, UX가 시스템을 이끈다.”</span>
+              <span class="presentation-location">MN Co. 세미나</span>
             </li>
             <li class="presentation-item">
-              <span class="presentation-date" data-i18n="pres.item3.date">2024.03.20</span>
-              <span class="presentation-title" data-i18n="pres.item3.title">“프롬프트 엔지니어링, 사고를 프로그래밍하다.”</span>
-              <span class="presentation-location" data-i18n="pres.item3.location">우리미래연구소 세미나</span>
+              <span class="presentation-date">2024.03.20</span>
+              <span class="presentation-title">“프롬프트 엔지니어링, 사고를 프로그래밍하다.”</span>
+              <span class="presentation-location">우리미래연구소 세미나</span>
             </li>
             <li class="presentation-item">
-              <span class="presentation-date" data-i18n="pres.item4.date">2025.09.15</span>
-              <span class="presentation-title" data-i18n="pres.item4.title">“금융 인프라 보안, 신뢰를 설계하다.”</span>
-              <span class="presentation-location" data-i18n="pres.item4.location">온누리PG 보안 강연</span>
+              <span class="presentation-date">2025.09.15</span>
+              <span class="presentation-title">“금융 인프라 보안, 신뢰를 설계하다.”</span>
+              <span class="presentation-location">온누리PG 보안 강연</span>
             </li>
           </ul>
         </div>
@@ -1177,7 +1162,7 @@ AI 프롬프트 엔지니어링부터 대규모 인프라 구축까지 정밀한
 
     <section id="log">
       <div class="terminal-window">
-        <div class="section-title" data-i18n="log.title">cat log.txt</div>
+        <div class="section-title">cat log.txt</div>
         <div class="terminal-body terminal-content">
           <div class="log-header-row">
             <p class="log-description">인기 글</p>
@@ -1188,17 +1173,17 @@ AI 프롬프트 엔지니어링부터 대규모 인프라 구축까지 정밀한
       </div>
     </section>
 
-    <div class="footer" data-i18n="footer"></div>
+    <div class="footer"></div>
   </main>
 
   <nav class="side-nav" aria-label="Section navigation">
-    <a class="side-link" href="#hero" data-i18n="nav.hero">메인</a>
-    <a class="side-link" href="#introduce" data-i18n="nav.introduce">소개</a>
-    <a class="side-link" href="#skills" data-i18n="nav.skills">기술</a>
-    <a class="side-link" href="#experience" data-i18n="nav.experience">경력</a>
-    <a class="side-link" href="#projects" data-i18n="nav.projects">프로젝트</a>
-    <a class="side-link" href="#presentation" data-i18n="nav.presentation">발표</a>
-    <a class="side-link" href="#log" data-i18n="nav.log">로그</a>
+    <a class="side-link" href="#hero">메인</a>
+    <a class="side-link" href="#introduce">소개</a>
+    <a class="side-link" href="#skills">기술</a>
+    <a class="side-link" href="#experience">경력</a>
+    <a class="side-link" href="#projects">프로젝트</a>
+    <a class="side-link" href="#presentation">발표</a>
+    <a class="side-link" href="#log">로그</a>
   </nav>
 
   <script>
