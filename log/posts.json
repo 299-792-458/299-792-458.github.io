@@ -174,6 +174,15 @@
     "video": "/log/videos/surfacebook-video.mp4"
   },
   {
+    "slug": "price-is-quality",
+    "title": "가격이 곧 품질이다",
+    "date": "2022-04-01",
+    "summary": "가격과 품질의 관계를 약속과 경험의 관점에서 다시 정리한 생각",
+    "readingTime": "3 min",
+    "tags": ["Think"],
+    "coverImage": "/log/images/thinking-icon.svg"
+  },
+  {
     "slug": "slow-standards-beyond-speed",
     "title": "속도 이후의 기준",
     "date": "2024-06-01",
