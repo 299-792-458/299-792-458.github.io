@@ -10,7 +10,7 @@
   },
   {
     "slug": "dell-r260-scale-out",
-    "title": "Dell R260 증설 리추얼",
+    "title": "Dell R260 리추얼",
     "date": "2025-12-15",
     "summary": "R260을 추가해 듀얼 서버를 구성하고 전원·케이블·iDRAC을 점검한 기록",
     "readingTime": "3 min",
@@ -47,7 +47,7 @@
   },
   {
     "slug": "dell-r250-first-check",
-    "title": "Dell R250 첫 점검",
+    "title": "Dell R250 리추얼",
     "date": "2025-05-20",
     "summary": "새로 들인 Dell R250을 랙에 올리기 전 내부 상태와 전원, 케이블을 점검한 기록",
     "readingTime": "3 min",
