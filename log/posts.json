@@ -148,7 +148,7 @@
     "slug": "gpt-search-disaster-alert",
     "title": "경보 뒤에 열린 탐색",
     "date": "2023-06-01",
-    "summary": "위급재난문자 직후 GPT 검색 기능을 시연하며 느린 응답 속에서도 생각의 흐름을 확인한 기록",
+    "summary": "위급재난문자 직후 GPT 검색을 시연하며 흐름을 확인한 기록",
     "readingTime": "2 min",
     "tags": ["Code"],
     "coverImage": "/log/images/gpt-search-disaster-alert-thumb.webp",
