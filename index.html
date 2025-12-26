@@ -1180,7 +1180,7 @@ AI 프롬프트 엔지니어링부터 대규모 인프라 구축까지 정밀한
         <div class="section-title" data-i18n="log.title">cat log.txt</div>
         <div class="terminal-body terminal-content">
           <div class="log-header-row">
-            <p class="log-description">전체 목록을 확인해 주세요.</p>
+            <p class="log-description">인기 글</p>
             <a class="log-view-all" href="https://299-792-458.github.io/log/index.html" target="_blank" rel="noopener">전체 목록</a>
           </div>
           <div class="log-list" id="log-list"></div>
@@ -1404,9 +1404,16 @@ AI 프롬프트 엔지니어링부터 대규모 인프라 구축까지 정밀한
           return;
         }
         logList.innerHTML = "";
-        posts
+        const featuredOrder = ["opensource-future", "happy-hhkb", "cookie-party-poodle"];
+        const featuredPosts = featuredOrder
+          .map(slug => posts.find(post => post.slug === slug))
+          .filter(Boolean);
+        const fallbackPosts = posts
+          .filter(post => !featuredOrder.includes(post.slug))
           .slice()
-          .sort((a, b) => new Date(b.date) - new Date(a.date))
+          .sort((a, b) => new Date(b.date) - new Date(a.date));
+        featuredPosts
+          .concat(fallbackPosts)
           .slice(0, 3)
           .forEach(post => logList.appendChild(createLogEntry(post)));
       }catch(error){
