@@ -454,6 +454,14 @@
       background:rgb(24, 96, 214);
       border-color:rgb(24, 96, 214);
     }
+    .log-button.is-outline{
+      color:rgb(31, 111, 235);
+      background:transparent;
+    }
+    .log-button.is-outline:hover{
+      background:rgba(31, 111, 235, .08);
+      border-color:rgb(31, 111, 235);
+    }
     .log-header-row{
       display:flex;
       flex-wrap:wrap;
@@ -1165,7 +1173,7 @@ AI 프롬프트 엔지니어링부터 대규모 인프라 구축까지 정밀한
         <div class="section-title">cat log.txt</div>
         <div class="terminal-body terminal-content">
           <div class="log-header-row">
-            <span class="log-button log-description">인기 글</span>
+            <span class="log-button is-outline log-description">인기 글</span>
             <a class="log-button log-view-all" href="https://299-792-458.github.io/log/index.html" target="_blank" rel="noopener">전체 목록</a>
           </div>
           <div class="log-list" id="log-list"></div>
