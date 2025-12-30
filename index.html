@@ -439,19 +439,20 @@
       flex-direction:column;
       gap:16px;
     }
-    .log-view-all{
+    .log-button{
       font-size:var(--size-xs);
-      color:var(--accent-strong);
+      color:#fff;
       text-decoration:none;
-      border:1px solid var(--accent-strong);
+      border:1px solid rgb(31, 111, 235);
+      background:rgb(31, 111, 235);
       padding:6px 12px;
       border-radius:999px;
-      transition:background .2s ease, color .2s ease;
+      transition:background .2s ease, border-color .2s ease;
       white-space:nowrap;
     }
-    .log-view-all:hover{
-      background:var(--accent-strong);
-      color:#fff;
+    .log-button:hover{
+      background:rgb(24, 96, 214);
+      border-color:rgb(24, 96, 214);
     }
     .log-header-row{
       display:flex;
@@ -464,7 +465,6 @@
       flex:1 1 220px;
       margin:0;
       font-size:var(--size-sm);
-      color:rgb(31, 111, 235);
     }
     .log-entry{
       border:1px solid var(--line);
@@ -1165,8 +1165,8 @@ AI 프롬프트 엔지니어링부터 대규모 인프라 구축까지 정밀한
         <div class="section-title">cat log.txt</div>
         <div class="terminal-body terminal-content">
           <div class="log-header-row">
-            <p class="log-description">인기 글</p>
-            <a class="log-view-all" href="https://299-792-458.github.io/log/index.html" target="_blank" rel="noopener">전체 목록</a>
+            <span class="log-button log-description">인기 글</span>
+            <a class="log-button log-view-all" href="https://299-792-458.github.io/log/index.html" target="_blank" rel="noopener">전체목록</a>
           </div>
           <div class="log-list" id="log-list"></div>
         </div>
